@@ -90,7 +90,7 @@ jobs:
         run: make download -j"$(nproc)"
 
       - name: Build ${{ matrix.target }}
-        run: make V=s -j"$(nproc)"
+        run: make -j"$(nproc)"
 
       - name: Pack ${{ matrix.target }}
         run: |
