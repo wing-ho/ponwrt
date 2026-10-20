@@ -3,7 +3,7 @@ name: Release PonWrt
 on:
   workflow_dispatch:
     inputs:
-     debug_enabled:
+      debug_enabled:
         type: boolean
         description: 'Enable tmate debugging'
         default: true
